@@ -27,7 +27,6 @@ academic assignment.
 ## Current limitations
 
 - the TED transcript CSV dataset is not included;
-- both scripts contain absolute paths from the original development machines;
 - the graphical version still depends partly on terminal input;
 - indexing is rebuilt in memory at every launch;
 - tokenisation is intentionally simple and does not use stemming or stop words;
@@ -36,8 +35,9 @@ academic assignment.
 ## Reproducing the exercise
 
 The code uses only the Python standard library. To run it, obtain a CSV file
-whose first two columns contain a transcript and its URL, then replace the
-hard-coded dataset path near the top of the chosen script.
+whose first two columns contain a transcript and its URL. Save it as
+`TED_transcripts.csv` beside the Python scripts. The dataset path is resolved
+relative to each script, independently of the current working directory.
 
 ```bash
 python3 "TP1 Final Version.py"
