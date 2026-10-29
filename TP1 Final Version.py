@@ -7,12 +7,12 @@ Created on Wed Sep 7 07:54:41 2022
 """
 
 import csv
+from pathlib import Path
 import re
 from math import log
 
 # Open the CSV file
-doc = open('/Users/julienesbt/Documents/Etudes/M1/BDA/TP/TP1/TED_transcripts.csv', 'r')
-# doc = open('/Users/hugolegeard/Downloads/Fac/M1_EIT/S7/BDA/TP/TED_transcripts.csv', 'r')
+doc = open(Path(__file__).with_name('TED_transcripts.csv'), 'r')
 
 ########################## Fonctions ##########################
 
